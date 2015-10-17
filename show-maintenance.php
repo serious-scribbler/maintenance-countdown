@@ -26,7 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			var ending = "<?php echo esc_attr( get_option('mcount-enddate') ); ?>";
 			var endtime = "<?php echo esc_attr( get_option('mcount-endtime') ); ?>";
 			ending = ending.split("-");
-			endtime = endtime.split("-");
+			endtime = endtime.split(":");
 			var year = 2018;
 			var month = 10;
 			var day = 1;
@@ -52,17 +52,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			}, 200);
 		</script>
 		<title>
-			<?php echo esc_attr( get_option('mcount-title') ); ?>
+			<?php echo esc_attr( get_option('mcount-title', 'Maintenance') ); ?>
 		</title>
 	</head>
 	<body>
 		<div class="wrapper">
 			<div class="giant">
-				<?php echo esc_attr( get_option('mcount-bigtext') ); ?>
+				<?php echo esc_attr( get_option('mcount-bigtext', 'Down for maintenance') ); ?>
 			</div>
 			<p>
-				<?php echo esc_attr( get_option('mcount-maintenanceinfo') ); ?><br>
-				<b><?php echo esc_attr( get_option('mcount-onlinemessage') ); ?></b>
+				<?php echo esc_attr( get_option('mcount-maintenanceinfo', 'This website is currently undergoing scheduled maintenance.') ); ?><br>
+				<b><?php echo esc_attr( get_option('mcount-onlinemessage', 'Check back in:') ); ?></b>
 			</p>
 			<table>
 				<tr>
@@ -102,7 +102,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			</table>
 		</div>
 		<div id="footer">
-			Design: <a href="https://github.com/serious-scribbler/Fast-Maintenance">Fast Maintenance by serious-scribbler (Phil Niehus)</a>
+			<a href="https://github.com/serious-scribbler/maintenance-countdown">Maintenance Countdown by serious-scribbler (Phil Niehus)</a>
 		</div>
 	</body>
 </html>

@@ -14,22 +14,22 @@
          
         <tr valign="top">
         <th scope="row">Maintenance Page Title:</th>
-        <td><input type="text" name="mcount-title" value="<?php echo esc_attr( get_option('mcount-title') ); ?>" /></td>
+        <td><input type="text" name="mcount-title" value="<?php echo esc_attr( get_option('mcount-title', 'Maintenance') ); ?>" /></td>
         </tr>
         
         <tr valign="top">
         <th scope="row">Headline</th>
-        <td><input type="text" name="mcount-bigtext" value="<?php echo esc_attr( get_option('mcount-bigtext') ); ?>" /></td>
+        <td><input type="text" name="mcount-bigtext" value="<?php echo esc_attr( get_option('mcount-bigtext', 'Down for maintenance') ); ?>" /></td>
         </tr>
 		
 		<tr valign="top">
         <th scope="row">Maintenance information:</th>
-        <td><input type="text" name="mcount-maintenanceinfo" value="<?php echo esc_attr( get_option('mcount-maintenanceinfo') ); ?>" /></td>
+        <td><input type="text" name="mcount-maintenanceinfo" value="<?php echo esc_attr( get_option('mcount-maintenanceinfo', 'This website is currently undergoing scheduled maintenance.') ); ?>" /></td>
         </tr>
 		
 		<tr valign="top">
         <th scope="row">Check back message:</th>
-        <td><input type="text" name="mcount-onlinemessage" value="<?php echo esc_attr( get_option('mcount-onlinemessage') ); ?>" /></td>
+        <td><input type="text" name="mcount-onlinemessage" value="<?php echo esc_attr( get_option('mcount-onlinemessage', 'Check back in:') ); ?>" /></td>
         </tr>
 		
 		<tr valign="top">

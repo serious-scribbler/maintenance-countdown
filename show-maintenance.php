@@ -102,7 +102,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			</table>
 		</div>
 		<div id="footer">
-			<a href="https://github.com/serious-scribbler/maintenance-countdown">Maintenance Countdown by serious-scribbler (Phil Niehus)</a>
+			<a href="https://github.com/serious-scribbler/maintenance-countdown">Maintenance Countdown plugin by serious-scribbler (Phil Niehus)</a>
 		</div>
 	</body>
 </html>

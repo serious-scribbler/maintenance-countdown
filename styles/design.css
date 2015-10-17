@@ -1,0 +1,80 @@
+/*
+Copyright (C) 2015 Phil Niehus
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+body{
+	background-color: #eee;
+	font-family: Calibri;
+	text-align: center;
+}
+.wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	font-size: 35px;
+	margin-top: 5%;
+	height: 100%;
+}
+.giant{
+	font-size: 105px;
+}
+a{
+	color: #000;
+}
+table{
+	border: none;
+	border-collapse: collapse;
+	text-align: center;
+	float: center;
+	margin-left: auto;
+	margin-right: auto;
+	border-spacing: 0;
+	overflow: hidden;
+	color: #fff;
+}
+.frame{
+	font-size: 22px;
+	background-color: #33C453;
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	box-shadow: inset 2px 2px 4px #333;
+	-webkit-box-shadow: inset 2px 2px 4px #333;
+	-moz-box-shadow: inset 2px 2px 4px #333;
+}
+div.frame span{
+	font-size: 40px;
+}
+.center{
+	padding: 23%;
+}
+#footer{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding-bottom: 5px;
+	text-align: center;
+	font-size: 15px;
+	color: #444;
+	bottom: 0;
+	position: absolute;
+}
+#footer a{
+	color: #333;
+}
+#footer a:visited{
+	color: #333;
+}
+

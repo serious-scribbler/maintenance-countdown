@@ -19,9 +19,10 @@
 	 register_setting( 'maintenance_countdown_settings', 'status' );
 	 register_setting( 'maintenance_countdown_settings', 'title' );
 	 register_setting( 'maintenance_countdown_settings', 'bigtext' );
+	 register_setting( 'maintenance_countdown_settings', 'maintenanceinfo' );
 	 register_setting( 'maintenance_countdown_settings', 'onlinemessage' );
 	 register_setting( 'maintenance_countdown_settings', 'enddate' );
-	 
+	 register_setting( 'maintenance_countdown_settings', 'endtime' );	 
  }
  function maintenance_settings_page(){
 	 include("maintenance-menu.php");

@@ -58,6 +58,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <th scope="row">Maintenance end time (hh:mm):</th>
         <td><input type="text" name="mcount-endtime" value="<?php echo esc_attr( get_option('mcount-endtime') ); ?>" /></td>
         </tr>
+		
+		<tr valign="top">
+        <th scope="row">Maintenance page design:</th>
+			<td><select name="mcount-design"><option value="greyout" <?php if(get_option('mcount-design', 'greyout') == "greyout") echo "selected";?>>Grey out</option><option value="stripes" <?php if(get_option('mcount-design', 'greyout') == "stripes") echo "selected";?>>Stipes</option></select>
+		</tr>
     </table>
     
     <?php submit_button(); ?>

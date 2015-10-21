@@ -15,7 +15,20 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 body{
-	background-color: #eee;
+	
+	<?php 
+		if(isset($_REQUEST['style'])){
+			$s = $_REQUEST['style'];
+			switch($s){
+				case "stripes":
+					echo "background: repeating-linear-gradient(45deg, #eee, #eee 10%, #fff 10%, #fff 20%);";
+					break;
+				default:
+					echo "background-color: #eee;";
+					break;
+			}
+		}
+	?>
 	font-family: Calibri;
 	text-align: center;
 }

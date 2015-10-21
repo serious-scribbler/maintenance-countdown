@@ -23,7 +23,8 @@
 	 register_setting( 'maintenance_countdown_settings', 'mcount-maintenanceinfo' );
 	 register_setting( 'maintenance_countdown_settings', 'mcount-onlinemessage' );
 	 register_setting( 'maintenance_countdown_settings', 'mcount-enddate' );
-	 register_setting( 'maintenance_countdown_settings', 'mcount-endtime' );	 
+	 register_setting( 'maintenance_countdown_settings', 'mcount-endtime' );
+	 register_setting( 'maintenance_countdown_settings', 'mcount-design' );
  }
  function maintenance_settings_page(){
 	 include("maintenance-menu.php");

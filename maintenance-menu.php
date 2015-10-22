@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 <form method="post" action="options.php">
     <?php settings_fields( 'maintenance_countdown_settings' ); ?>
     <?php do_settings_sections( 'maintenance_countdown_settings' ); ?>
-	<?php $maintenance_enabled = get_option('mcount-status'); echo $maintenance_enabled; ?>
+	<?php $maintenance_enabled = get_option('mcount-status'); ?>
     <table class="form-table">
         <tr valign="top">
         <th scope="row">Enable maintenance mode:</th>

@@ -21,12 +21,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 <form method="post" action="options.php">
     <?php settings_fields( 'maintenance_countdown_settings' ); ?>
     <?php do_settings_sections( 'maintenance_countdown_settings' ); ?>
-	<?php $maintenance_enabled = get_option('mcount-status');?>
+	<?php $maintenance_enabled = get_option('mcount-status'); echo $maintenance_enabled; ?>
     <table class="form-table">
         <tr valign="top">
         <th scope="row">Enable maintenance mode:</th>
-        <td><input type="radio" style="padding-right: 4px;" name="mcount-status" <?php if($maintenance_enabled == 'true') echo 'checked="checked"'; ?> value="true" />yes
-			<input type="radio" style="margin-left: 20px; padding-right: 4px;" name="mcount-status" <?php if($maintenance_enabled == 'false') echo 'checked="checked"'; ?> value="false" />no<td>
+        <td>
+			<input type="radio" style="padding-right: 4px;" name="mcount-status" <?php if($maintenance_enabled == 'true') echo 'checked="checked"'; ?> value="true" />yes
+			<input type="radio" style="margin-left: 20px; padding-right: 4px;" name="mcount-status" <?php if($maintenance_enabled == 'false') echo 'checked="checked"'; ?> value="false" />no
+		</td>
         </tr>
          
         <tr valign="top">
@@ -58,15 +60,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <th scope="row">Maintenance end time (hh:mm):</th>
         <td><input type="text" name="mcount-endtime" value="<?php echo esc_attr( get_option('mcount-endtime') ); ?>" /></td>
         </tr>
-		
+		<!--
 		<tr valign="top">
-		<th scope="row">Autodisble maintenance mode:</th>
+		<th scope="row">Autodisable maintenance mode:</th>
 			<td>
-				<input type="radio" style="padding-right: 4px;" name="mcount-status" <?php if($maintenance_enabled == 'true') echo 'checked="checked"'; ?> value="true" />yes
+				<input type="radio" style="padding-right: 4px;" name="mcount-autodisable" <?php if($maintenance_enabled == 'true') echo 'checked="checked"'; ?> value="true" />yes
 				<input type="radio" style="margin-left: 20px; padding-right: 4px;" name="mcount-autodisable" <?php if($maintenance_enabled == 'false') echo 'checked="checked"'; ?> value="false" />no
 			</td>
 		</tr>
-		
+		-->
 		<tr valign="top">
         <th scope="row">Maintenance page design:</th>
 			<td>

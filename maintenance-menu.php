@@ -60,9 +60,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </tr>
 		
 		<tr valign="top">
-        <th scope="row">Maintenance page design:</th>
-			<td><select name="mcount-design"><option value="greyout" <?php if(get_option('mcount-design', 'greyout') == "greyout") echo "selected";?>>Grey out</option><option value="stripes" <?php if(get_option('mcount-design', 'greyout') == "stripes") echo "selected";?>>Stipes</option></select>
+		<th scope="row">Autodisble maintenance mode:</th>
+		<input type="radio" style="padding-right: 4px;" name="mcount-status" <?php if($maintenance_enabled == 'true') echo 'checked="checked"'; ?> value="true" />yes
+			<input type="radio" style="margin-left: 20px; padding-right: 4px;" name="mcount-autodisable" <?php if($maintenance_enabled == 'false') echo 'checked="checked"'; ?> value="false" />no<td>
 		</tr>
+		
+		<tr valign="top">
+        <th scope="row">Maintenance page design:</th>
+			<td>
+				<select name="mcount-design">
+					<option value="greyout" <?php if(get_option('mcount-design', 'greyout') == "greyout") echo "selected";?>>Grey out</option>
+					<option value="charcoal" <?php if(get_option('mcount-design', 'greyout') == "charcoal") echo "selected";?>>Charcoal</option>
+					<option value="custom" <?php if(get_option('mcount-design', 'greyout') == "custom") echo "selected";?>>Custom</option>
+				</select>
+			</td>
+		</tr>
+		
     </table>
     
     <?php submit_button(); ?>

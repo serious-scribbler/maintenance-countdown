@@ -26,8 +26,6 @@ Features:
 
 This section describes how to install the plugin and get it working.
 
-e.g.
-
 1. Unpack the plugin from its zip-file and upload all its files into a subdirectory of the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Configure the plugin through the 'Maintenance Countdown' menu in WordPress
@@ -51,3 +49,8 @@ Yeah you can, just open up the 'maintenance-countdown.php' and change the capabi
 
 = 1.0.7 =
 * The first version of my plugin
+
+= 1.1.0 =
+* Added a second design
+* Added an option for custom designs
+* Added the option to disable maintenance mode when the target date is exceeded

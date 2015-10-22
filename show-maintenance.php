@@ -18,7 +18,8 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 	<head>
-		<link rel="stylesheet" href="<?php echo(plugins_url( 'styles/design.css', __FILE__ )); ?>">
+	<?php echo esc_attr( get_option('mcount-endtime', 'greyout') ); ?>
+		<link rel="stylesheet" href="<?php echo((plugins_url( 'styles/design.php', __FILE__ )).'?style='.(esc_attr( get_option('mcount-design', 'greyout') )); ?>">
 		<!--countdown.js was written by Stephen M. McKamey and is licensed under The MIT License.
 		Read the included 'Countdown.js LICENSE' or visit http://countdownjs.org for mor information.-->
 		<script src="<?php echo(plugins_url( 'middleware/countdown.js', __FILE__ )); ?>" type="text/javascript"></script>

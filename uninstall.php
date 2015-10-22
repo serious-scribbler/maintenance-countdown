@@ -9,4 +9,6 @@
 	delete_option('mcount-maintenanceinfo');
 	delete_option('mcount-enddate');
 	delete_option('mcount-endtime');
+	delete_option('mcount-design');
+	delete_option('mcount-autodisable');
 ?>

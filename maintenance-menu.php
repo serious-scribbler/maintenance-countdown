@@ -61,8 +61,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 		
 		<tr valign="top">
 		<th scope="row">Autodisble maintenance mode:</th>
-		<input type="radio" style="padding-right: 4px;" name="mcount-status" <?php if($maintenance_enabled == 'true') echo 'checked="checked"'; ?> value="true" />yes
-			<input type="radio" style="margin-left: 20px; padding-right: 4px;" name="mcount-autodisable" <?php if($maintenance_enabled == 'false') echo 'checked="checked"'; ?> value="false" />no<td>
+			<td>
+				<input type="radio" style="padding-right: 4px;" name="mcount-status" <?php if($maintenance_enabled == 'true') echo 'checked="checked"'; ?> value="true" />yes
+				<input type="radio" style="margin-left: 20px; padding-right: 4px;" name="mcount-autodisable" <?php if($maintenance_enabled == 'false') echo 'checked="checked"'; ?> value="false" />no
+			</td>
 		</tr>
 		
 		<tr valign="top">

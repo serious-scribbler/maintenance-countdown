@@ -75,11 +75,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 				<select name="mcount-design">
 					<option value="greyout" <?php if(get_option('mcount-design', 'greyout') == "greyout") echo "selected";?>>Grey out</option>
 					<option value="charcoal" <?php if(get_option('mcount-design', 'greyout') == "charcoal") echo "selected";?>>Charcoal</option>
+					<option value="calendar" <?php if(get_option('mcount-design', 'greyout') == "calendar") echo "selected";?>>Calendar</option>
 					<option value="custom" <?php if(get_option('mcount-design', 'greyout') == "custom") echo "selected";?>>Custom</option>
 				</select>
 			</td>
 		</tr>
 		
+		<tr valign="top">
+        <th scope="row">Maintenance page footer text:</th>
+        <td><input type="text" name="mcount-footer" value="<?php echo esc_attr( get_option('mcount-footer', '') ); ?>" /></td>
+        </tr>
     </table>
     
     <?php submit_button(); ?>

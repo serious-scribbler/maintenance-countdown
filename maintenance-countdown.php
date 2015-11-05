@@ -25,6 +25,7 @@
 	 register_setting( 'maintenance_countdown_settings', 'mcount-enddate' );
 	 register_setting( 'maintenance_countdown_settings', 'mcount-endtime' );
 	 register_setting( 'maintenance_countdown_settings', 'mcount-design' );
+	 register_setting( 'maintenance_countdown_settings', 'mcount-footer' );
 	 //register_setting( 'maintenance_countdown_settings', 'mcount-autodisable' );
  }
  function maintenance_settings_page(){

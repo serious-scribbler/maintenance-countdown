@@ -3,7 +3,7 @@ Contributors:
 Tags: maintenance countdown, maintenance, administration, information
 Requires at least: 4.3.1
 Tested up to: 4.3.1
-Stable tag: 4.3.1
+Stable tag: 1.2.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -43,14 +43,18 @@ Yeah you can, just open up the 'maintenance-countdown.php' and change the capabi
 == Screenshots ==
 
 1. This is the plugins administration menu.
-2.This is the look of the maintenance countdown page
+2. This is the look of the maintenance countdown page with the 'grayout' design
+3. This is the maintenace countdown page with the 'charcoal' design
 
 == Changelog ==
 
-= 1.0.7 =
-* The first version of my plugin
+= 1.2.0 =
+* Added a third design
 
 = 1.1.0 =
 * Added a second design
 * Added an option for custom designs
-* Added the option to disable maintenance mode when the target date is exceeded
+
+= 1.0.7 =
+* The first version of my plugin
+

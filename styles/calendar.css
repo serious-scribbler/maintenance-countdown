@@ -1,21 +1,7 @@
-/*
-Copyright (C) 2015 Phil Niehus
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
 body{
-	background-color: rgba(200, 200, 200, 1);
+	/*Change the background color to a rgba value with opacity for layered backgrounds*/
+	background-color: #333;
 	font-family: Calibri;
 	text-align: center;
 	color: #fff;
@@ -23,11 +9,12 @@ body{
 	padding: 0;
 }
 body::after{
-	content: "";
-	background-image: url("paper1.svg");
+	/*
+	Uncomment and edit the following two lines to add a background-image to the lower layer
+	background-image: url("");
 	background-repeat: repeat;
-	background-size: 110px 110px;
-	background-position: -55px -55px;
+	*/
+	content: "";
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -37,6 +24,7 @@ body::after{
 	right: 0;
 	z-index: -1;
 }
+/*The wrapper contains all contents except the footer contents*/
 .wrapper{
 	margin-left: auto;
 	margin-right: auto;
@@ -45,12 +33,15 @@ body::after{
 	margin-top: 5%;
 	height: 100%;
 }
+/*The giant class sets the style of the headline*/
 .giant{
 	font-size: 105px;
 }
+
 a{
-	color: #000;
+	color: #eee;
 }
+/*The time display is formatted as a table*/
 table{
 	border: none;
 	border-collapse: collapse;
@@ -62,22 +53,27 @@ table{
 	overflow: hidden;
 	color: #fff;
 }
+/*The frame class sets the frame styling of the timer elements*/
 .frame{
 	font-size: 22px;
 	background-color: #33C453;
-	border-radius: 50%;
+	border-radius: 15px;
 	height: 150px;
 	width: 150px;
+	margin-left: 3px;
 	box-shadow: inset 2px 2px 4px #333;
 	-webkit-box-shadow: inset 2px 2px 4px #333;
 	-moz-box-shadow: inset 2px 2px 4px #333;
 }
+/*This style is applied to the texts of the time display*/
 div.frame span{
 	font-size: 40px;
 }
+/*Changes in this class do not overwrite the style of the time display. The style of this class changes the unit texts.*/
 .center{
 	padding: 23%;
 }
+/*This style applies to the footer*/
 #footer{
 	margin-left: auto;
 	margin-right: auto;
@@ -85,13 +81,13 @@ div.frame span{
 	padding-bottom: 5px;
 	text-align: center;
 	font-size: 15px;
-	color: #444;
+	color: #ddd;
 	bottom: 0;
 	position: absolute;
 }
 #footer a{
-	color: #333;
+	color: #eee;
 }
 #footer a:visited{
-	color: #333;
+	color: #ccc;
 }

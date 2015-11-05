@@ -103,7 +103,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			</table>
 		</div>
 		<div id="footer">
-			
+			<?php echo esc_attr( get_option('mcount-footer', '') ); ?>
 		</div>
 	</body>
 </html>

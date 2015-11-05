@@ -10,5 +10,6 @@
 	delete_option('mcount-enddate');
 	delete_option('mcount-endtime');
 	delete_option('mcount-design');
-	delete_option('mcount-autodisable');
+	delete_option('mcount-footer');
+	//delete_option('mcount-autodisable');
 ?>

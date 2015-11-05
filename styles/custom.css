@@ -1,10 +1,12 @@
 
 body{
-	/*Change the background color to a rgba value with opacity for layerd backgrounds*/
+	/*Change the background color to a rgba value with opacity for layered backgrounds*/
 	background-color: #eee;
 	font-family: Calibri;
 	text-align: center;
 	color: #fff;
+	margin: 0;
+	padding: 0;
 }
 body::after{
 	/*

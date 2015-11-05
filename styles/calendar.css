@@ -81,7 +81,7 @@ div.frame span{
 	padding-bottom: 5px;
 	text-align: center;
 	font-size: 15px;
-	color: #ddd;
+	color: #fff;
 	bottom: 0;
 	position: absolute;
 }
@@ -89,5 +89,5 @@ div.frame span{
 	color: #eee;
 }
 #footer a:visited{
-	color: #ccc;
+	color: #fff;
 }
